@@ -68,19 +68,6 @@ router.route("/delete/:id").delete(async (req, res) => {
 })
 
 
-//get one user
-// router.route("/get/:id").get(async (req, res) => {
-//     let userId = req.params.id;
-
-//     const user = await Posts.findById(userId)
-//     .then((poster) => {
-//         res.status(200).send({status: "user fetched", poster})
-//     }).catch(() => {
-//         console.log(err.message);
-//         res.status(500).send({status: "Error with get user", error: err.message});
-//     })
-// })
-
 router.route("/get/:id").get((req, res) => {
     let postId = req.params.id;
 
