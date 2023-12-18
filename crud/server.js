@@ -16,7 +16,7 @@ app.use(cors());
 app.use("/post", postRoutes);
 
 const PORT  = 8000;
-const DB_URL = 'mongodb+srv://eshaniechathurika:shane@cluster0.b6s6lab.mongodb.net/'
+const DB_URL = 'mongodb_URL'
 
 mongoose.connect(DB_URL)
 .then(() => {
